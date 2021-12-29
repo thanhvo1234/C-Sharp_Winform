@@ -1,0 +1,11 @@
+C:\Users\thanh\source\repos\ASM2\ASM2\bin\Debug\ASM2.exe.config
+C:\Users\thanh\source\repos\ASM2\ASM2\bin\Debug\ASM2.exe
+C:\Users\thanh\source\repos\ASM2\ASM2\bin\Debug\ASM2.pdb
+C:\Users\thanh\source\repos\ASM2\ASM2\obj\Debug\ASM2.csproj.AssemblyReference.cache
+C:\Users\thanh\source\repos\ASM2\ASM2\obj\Debug\ASM2.csproj.SuggestedBindingRedirects.cache
+C:\Users\thanh\source\repos\ASM2\ASM2\obj\Debug\ASM2.Properties.Resources.resources
+C:\Users\thanh\source\repos\ASM2\ASM2\obj\Debug\ASM2.csproj.GenerateResource.cache
+C:\Users\thanh\source\repos\ASM2\ASM2\obj\Debug\ASM2.csproj.CoreCompileInputs.cache
+C:\Users\thanh\source\repos\ASM2\ASM2\obj\Debug\ASM2.exe
+C:\Users\thanh\source\repos\ASM2\ASM2\obj\Debug\ASM2.pdb
+C:\Users\thanh\source\repos\ASM2\ASM2\obj\Debug\ASM2.Form1.resources
