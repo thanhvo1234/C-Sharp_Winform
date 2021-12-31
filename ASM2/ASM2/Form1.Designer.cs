@@ -30,9 +30,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.dataGridViewStatistical = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.rbRelative = new System.Windows.Forms.RadioButton();
             this.rbMin = new System.Windows.Forms.RadioButton();
             this.rbMax = new System.Windows.Forms.RadioButton();
             this.btStatistics = new System.Windows.Forms.Button();
@@ -70,13 +78,6 @@
             this.txtId = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.rbRelative = new System.Windows.Forms.RadioButton();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStatistical)).BeginInit();
             this.panel2.SuspendLayout();
@@ -92,9 +93,10 @@
             this.tabPage2.Controls.Add(this.dataGridViewStatistical);
             this.tabPage2.Controls.Add(this.panel2);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(968, 615);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.tabPage2.Size = new System.Drawing.Size(1293, 714);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Statistical";
             // 
@@ -105,14 +107,45 @@
             this.dataGridViewStatistical.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewTextBoxColumn9});
-            this.dataGridViewStatistical.Location = new System.Drawing.Point(6, 340);
+            this.dataGridViewStatistical.Location = new System.Drawing.Point(8, 392);
+            this.dataGridViewStatistical.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dataGridViewStatistical.Name = "dataGridViewStatistical";
-            this.dataGridViewStatistical.Size = new System.Drawing.Size(956, 269);
+            this.dataGridViewStatistical.Size = new System.Drawing.Size(1275, 310);
             this.dataGridViewStatistical.TabIndex = 4;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.HeaderText = "ID";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.HeaderText = "NAME";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.HeaderText = "BIRTH DAY";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.HeaderText = "SEX";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.HeaderText = "CLASS";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.HeaderText = "MEDIUM GRADE";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
             // 
             // panel2
             // 
@@ -120,17 +153,31 @@
             this.panel2.Controls.Add(this.rbMin);
             this.panel2.Controls.Add(this.rbMax);
             this.panel2.Controls.Add(this.btStatistics);
-            this.panel2.Location = new System.Drawing.Point(6, 6);
+            this.panel2.Location = new System.Drawing.Point(8, 7);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(956, 328);
+            this.panel2.Size = new System.Drawing.Size(1275, 378);
             this.panel2.TabIndex = 2;
+            // 
+            // rbRelative
+            // 
+            this.rbRelative.AutoSize = true;
+            this.rbRelative.Location = new System.Drawing.Point(501, 117);
+            this.rbRelative.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.rbRelative.Name = "rbRelative";
+            this.rbRelative.Size = new System.Drawing.Size(314, 19);
+            this.rbRelative.TabIndex = 3;
+            this.rbRelative.TabStop = true;
+            this.rbRelative.Text = "Students have a relative grade point average.";
+            this.rbRelative.UseVisualStyleBackColor = true;
             // 
             // rbMin
             // 
             this.rbMin.AutoSize = true;
-            this.rbMin.Location = new System.Drawing.Point(704, 101);
+            this.rbMin.Location = new System.Drawing.Point(939, 117);
+            this.rbMin.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.rbMin.Name = "rbMin";
-            this.rbMin.Size = new System.Drawing.Size(223, 17);
+            this.rbMin.Size = new System.Drawing.Size(289, 19);
             this.rbMin.TabIndex = 2;
             this.rbMin.TabStop = true;
             this.rbMin.Text = "Students have a low grade point average.";
@@ -139,9 +186,10 @@
             // rbMax
             // 
             this.rbMax.AutoSize = true;
-            this.rbMax.Location = new System.Drawing.Point(48, 101);
+            this.rbMax.Location = new System.Drawing.Point(64, 117);
+            this.rbMax.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.rbMax.Name = "rbMax";
-            this.rbMax.Size = new System.Drawing.Size(231, 17);
+            this.rbMax.Size = new System.Drawing.Size(299, 19);
             this.rbMax.TabIndex = 2;
             this.rbMax.TabStop = true;
             this.rbMax.Text = "Students have a good grade point average.";
@@ -155,9 +203,10 @@
             this.btStatistics.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy;
             this.btStatistics.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
             this.btStatistics.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btStatistics.Location = new System.Drawing.Point(435, 234);
+            this.btStatistics.Location = new System.Drawing.Point(580, 270);
+            this.btStatistics.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btStatistics.Name = "btStatistics";
-            this.btStatistics.Size = new System.Drawing.Size(96, 41);
+            this.btStatistics.Size = new System.Drawing.Size(128, 47);
             this.btStatistics.TabIndex = 1;
             this.btStatistics.Text = "STATISTICS";
             this.btStatistics.UseVisualStyleBackColor = true;
@@ -168,10 +217,11 @@
             this.tabPage1.BackColor = System.Drawing.Color.Gray;
             this.tabPage1.Controls.Add(this.dataGridViewSV);
             this.tabPage1.Controls.Add(this.panel1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Location = new System.Drawing.Point(4, 24);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(968, 615);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.tabPage1.Size = new System.Drawing.Size(1293, 712);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Students information";
             // 
@@ -189,9 +239,10 @@
             this.Column6,
             this.Column8,
             this.Column9});
-            this.dataGridViewSV.Location = new System.Drawing.Point(25, 367);
+            this.dataGridViewSV.Location = new System.Drawing.Point(33, 423);
+            this.dataGridViewSV.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dataGridViewSV.Name = "dataGridViewSV";
-            this.dataGridViewSV.Size = new System.Drawing.Size(914, 245);
+            this.dataGridViewSV.Size = new System.Drawing.Size(1219, 283);
             this.dataGridViewSV.TabIndex = 3;
             this.dataGridViewSV.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewSV_CellClick);
             // 
@@ -263,9 +314,10 @@
             this.panel1.Controls.Add(this.txtName);
             this.panel1.Controls.Add(this.txtId);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Location = new System.Drawing.Point(25, 22);
+            this.panel1.Location = new System.Drawing.Point(33, 25);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(914, 339);
+            this.panel1.Size = new System.Drawing.Size(1219, 391);
             this.panel1.TabIndex = 2;
             // 
             // Sx
@@ -274,61 +326,68 @@
             this.Sx.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.Sx.Location = new System.Drawing.Point(118, 264);
+            this.Sx.Location = new System.Drawing.Point(171, 306);
+            this.Sx.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Sx.Name = "Sx";
-            this.Sx.Size = new System.Drawing.Size(121, 21);
+            this.Sx.Size = new System.Drawing.Size(160, 23);
             this.Sx.TabIndex = 5;
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(118, 185);
+            this.dateTimePicker1.Location = new System.Drawing.Point(171, 210);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(194, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(257, 21);
             this.dateTimePicker1.TabIndex = 4;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(387, 48);
+            this.label6.Location = new System.Drawing.Point(516, 55);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(44, 13);
+            this.label6.Size = new System.Drawing.Size(54, 15);
             this.label6.TabIndex = 3;
             this.label6.Text = "CLASS:";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(387, 273);
+            this.label9.Location = new System.Drawing.Point(516, 315);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(98, 13);
+            this.label9.Size = new System.Drawing.Size(122, 15);
             this.label9.TabIndex = 3;
             this.label9.Text = "ENGLISH GRADE:";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(387, 121);
+            this.label8.Location = new System.Drawing.Point(516, 140);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(97, 13);
+            this.label8.Size = new System.Drawing.Size(120, 15);
             this.label8.TabIndex = 3;
             this.label8.Text = "PHYSICS GRADE:";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(387, 191);
+            this.label7.Location = new System.Drawing.Point(516, 220);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(82, 13);
+            this.label7.Size = new System.Drawing.Size(100, 15);
             this.label7.TabIndex = 3;
             this.label7.Text = "MATH GRADE:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(49, 273);
+            this.label5.Location = new System.Drawing.Point(65, 315);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(31, 13);
+            this.label5.Size = new System.Drawing.Size(38, 15);
             this.label5.TabIndex = 3;
             this.label5.Text = "SEX:";
             this.label5.Click += new System.EventHandler(this.label5_Click);
@@ -336,27 +395,30 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(49, 189);
+            this.label4.Location = new System.Drawing.Point(65, 218);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(68, 13);
+            this.label4.Size = new System.Drawing.Size(82, 15);
             this.label4.TabIndex = 3;
             this.label4.Text = "BIRTH DAY:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(49, 112);
+            this.label3.Location = new System.Drawing.Point(65, 129);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 13);
+            this.label3.Size = new System.Drawing.Size(50, 15);
             this.label3.TabIndex = 3;
             this.label3.Text = "NAME:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(49, 48);
+            this.label2.Location = new System.Drawing.Point(65, 55);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(21, 13);
+            this.label2.Size = new System.Drawing.Size(25, 15);
             this.label2.TabIndex = 3;
             this.label2.Text = "ID:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -366,9 +428,10 @@
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.BackColor = System.Drawing.Color.IndianRed;
             this.label1.ForeColor = System.Drawing.Color.Navy;
-            this.label1.Location = new System.Drawing.Point(3, 0);
+            this.label1.Location = new System.Drawing.Point(4, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(283, 21);
+            this.label1.Size = new System.Drawing.Size(377, 24);
             this.label1.TabIndex = 2;
             this.label1.Text = "STUDENT INFORMATION NEEDS TO BE ENTERED:";
             // 
@@ -379,9 +442,10 @@
             this.btDelete.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy;
             this.btDelete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
             this.btDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btDelete.Location = new System.Drawing.Point(763, 239);
+            this.btDelete.Location = new System.Drawing.Point(1017, 276);
+            this.btDelete.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btDelete.Name = "btDelete";
-            this.btDelete.Size = new System.Drawing.Size(82, 37);
+            this.btDelete.Size = new System.Drawing.Size(109, 43);
             this.btDelete.TabIndex = 0;
             this.btDelete.Text = "DELETE";
             this.btDelete.UseVisualStyleBackColor = true;
@@ -394,11 +458,12 @@
             this.btFix.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy;
             this.btFix.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
             this.btFix.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btFix.Location = new System.Drawing.Point(763, 154);
+            this.btFix.Location = new System.Drawing.Point(1017, 178);
+            this.btFix.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btFix.Name = "btFix";
-            this.btFix.Size = new System.Drawing.Size(82, 37);
+            this.btFix.Size = new System.Drawing.Size(109, 43);
             this.btFix.TabIndex = 0;
-            this.btFix.Text = "FIX";
+            this.btFix.Text = "UPDATE";
             this.btFix.UseVisualStyleBackColor = true;
             this.btFix.Click += new System.EventHandler(this.btFix_Click);
             // 
@@ -409,9 +474,10 @@
             this.btAdd.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy;
             this.btAdd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
             this.btAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btAdd.Location = new System.Drawing.Point(763, 59);
+            this.btAdd.Location = new System.Drawing.Point(1017, 68);
+            this.btAdd.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btAdd.Name = "btAdd";
-            this.btAdd.Size = new System.Drawing.Size(82, 37);
+            this.btAdd.Size = new System.Drawing.Size(109, 43);
             this.btAdd.TabIndex = 0;
             this.btAdd.Text = "ADD";
             this.btAdd.UseVisualStyleBackColor = true;
@@ -419,55 +485,61 @@
             // 
             // txtEnglish
             // 
-            this.txtEnglish.Location = new System.Drawing.Point(491, 261);
+            this.txtEnglish.Location = new System.Drawing.Point(655, 301);
+            this.txtEnglish.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtEnglish.Multiline = true;
             this.txtEnglish.Name = "txtEnglish";
-            this.txtEnglish.Size = new System.Drawing.Size(194, 25);
+            this.txtEnglish.Size = new System.Drawing.Size(257, 28);
             this.txtEnglish.TabIndex = 1;
             this.txtEnglish.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // txtPhysics
             // 
-            this.txtPhysics.Location = new System.Drawing.Point(491, 109);
+            this.txtPhysics.Location = new System.Drawing.Point(655, 126);
+            this.txtPhysics.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtPhysics.Multiline = true;
             this.txtPhysics.Name = "txtPhysics";
-            this.txtPhysics.Size = new System.Drawing.Size(194, 25);
+            this.txtPhysics.Size = new System.Drawing.Size(257, 28);
             this.txtPhysics.TabIndex = 1;
             this.txtPhysics.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // txtClass
             // 
-            this.txtClass.Location = new System.Drawing.Point(491, 36);
+            this.txtClass.Location = new System.Drawing.Point(655, 52);
+            this.txtClass.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtClass.Multiline = true;
             this.txtClass.Name = "txtClass";
-            this.txtClass.Size = new System.Drawing.Size(194, 25);
+            this.txtClass.Size = new System.Drawing.Size(257, 28);
             this.txtClass.TabIndex = 1;
             this.txtClass.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // txtMath
             // 
-            this.txtMath.Location = new System.Drawing.Point(491, 185);
+            this.txtMath.Location = new System.Drawing.Point(655, 213);
+            this.txtMath.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtMath.Multiline = true;
             this.txtMath.Name = "txtMath";
-            this.txtMath.Size = new System.Drawing.Size(194, 25);
+            this.txtMath.Size = new System.Drawing.Size(257, 28);
             this.txtMath.TabIndex = 1;
             this.txtMath.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(118, 109);
+            this.txtName.Location = new System.Drawing.Point(171, 126);
+            this.txtName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtName.Multiline = true;
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(194, 25);
+            this.txtName.Size = new System.Drawing.Size(257, 28);
             this.txtName.TabIndex = 1;
             this.txtName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // txtId
             // 
-            this.txtId.Location = new System.Drawing.Point(118, 45);
+            this.txtId.Location = new System.Drawing.Point(171, 52);
+            this.txtId.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtId.Multiline = true;
             this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(194, 25);
+            this.txtId.Size = new System.Drawing.Size(257, 28);
             this.txtId.TabIndex = 1;
             this.txtId.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -478,9 +550,10 @@
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy;
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(763, 59);
+            this.button1.Location = new System.Drawing.Point(1017, 68);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(82, 37);
+            this.button1.Size = new System.Drawing.Size(109, 43);
             this.button1.TabIndex = 0;
             this.button1.Text = "Add";
             this.button1.UseVisualStyleBackColor = true;
@@ -489,64 +562,27 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(9, 13);
+            this.tabControl1.Location = new System.Drawing.Point(12, 15);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(976, 641);
+            this.tabControl1.Size = new System.Drawing.Size(1301, 740);
             this.tabControl1.TabIndex = 2;
-            // 
-            // rbRelative
-            // 
-            this.rbRelative.AutoSize = true;
-            this.rbRelative.Location = new System.Drawing.Point(376, 101);
-            this.rbRelative.Name = "rbRelative";
-            this.rbRelative.Size = new System.Drawing.Size(241, 17);
-            this.rbRelative.TabIndex = 3;
-            this.rbRelative.TabStop = true;
-            this.rbRelative.Text = "Students have a relative grade point average.";
-            this.rbRelative.UseVisualStyleBackColor = true;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "ID";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "NAME";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.HeaderText = "SEX";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.HeaderText = "BIRTH DAY";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.HeaderText = "CLASS";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.HeaderText = "MEDIUM GRADE";
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkGray;
-            this.ClientSize = new System.Drawing.Size(997, 666);
+            this.BackColor = System.Drawing.Color.DimGray;
+            this.ClientSize = new System.Drawing.Size(1329, 768);
             this.Controls.Add(this.tabControl1);
             this.Cursor = System.Windows.Forms.Cursors.PanNW;
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Quản Lý Học Sinh";
+            this.Text = "Student management";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStatistical)).EndInit();
@@ -606,8 +642,8 @@
         private System.Windows.Forms.RadioButton rbRelative;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
     }
